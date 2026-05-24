@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leland L | Web Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #1e293b;
+      --gray: #64748b;
+      --light: #f8fafc;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--dark);
+      background: var(--light);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.8rem; font-weight: 800; }
+    .hero .tagline { font-size: 1.15rem; color: var(--gray); max-width: 560px; margin: 0 auto; }
+    .badge-skill {
+      background: #dbeafe;
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* Section */
+    section { padding: 60px 0; }
+    section h2 { font-weight: 700; margin-bottom: 30px; }
+    section h2 i { color: var(--primary); margin-right: 10px; }
+
+    /* Project Cards */
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid #e2e8f0;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: #e2e8f0;
+    }
+    .project-card .card-body { padding: 20px; }
+
+    /* Stats */
+    .stat-box {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+    }
+    .stat-box .number { font-size: 2rem; font-weight: 800; color: var(--primary); }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Leland L<span class="text-primary">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="container">
+    <img src="profile_avatar.jpg" 
+         alt="Leland L" class="rounded-circle mb-3 shadow-sm" 
+         width="120" height="120" style="object-fit:cover; border: 4px solid white;">
+    <h1>Hi, I'm Leland</h1>
+    <p class="tagline mb-3">Web Developer specializing in clean, responsive websites for small businesses. I turn ideas into live websites — fast.</p>
+    <div class="d-flex justify-content-center flex-wrap gap-2 mb-3">
+      <span class="badge-skill">HTML5</span>
+      <span class="badge-skill">CSS3</span>
+      <span class="badge-skill">JavaScript</span>
+      <span class="badge-skill">Bootstrap</span>
+      <span class="badge-skill">WordPress</span>
+      <span class="badge-skill">Responsive Design</span>
+      <span class="badge-skill">Git & GitHub</span>
+    </div>
+    <div class="mt-3">
+      <a href="#projects" class="btn btn-primary px-4 me-2">View My Work</a>
+      <a href="#contact" class="btn btn-outline-secondary px-4">Get In Touch</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2><i class="bi bi-person"></i>About Me</h2>
+        <p class="text-secondary">
+          I build websites that help small businesses establish their online presence. 
+          My approach is simple: understand what you need, deliver something that works on 
+          every device, and make sure you're happy with the result.
+        </p>
+        <p class="text-secondary">
+          I'm currently expanding into WordPress development and Shopify store setup, 
+          and I'm always learning new tools to serve my clients better. When I'm not 
+          coding, you'll find me exploring new technologies and refining my craft.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="bg-white" style="padding: 40px 0;">
+  <div class="container">
+    <div class="row g-3 text-center">
+      <div class="col-md-4">
+        <div class="stat-box">
+          <div class="number">5+</div>
+          <small class="text-secondary">Projects Delivered</small>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stat-box">
+          <div class="number">100%</div>
+          <small class="text-secondary">Responsive Design</small>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stat-box">
+          <div class="number">24h</div>
+          <small class="text-secondary">Avg. Response Time</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2><i class="bi bi-tools"></i>Skills & Tools</h2>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center mb-2">
+              <span class="fw-semibold" style="width:130px;">HTML5 / CSS3</span>
+              <div class="progress flex-grow-1" style="height:8px;">
+                <div class="progress-bar bg-primary" style="width:90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center mb-2">
+              <span class="fw-semibold" style="width:130px;">JavaScript</span>
+              <div class="progress flex-grow-1" style="height:8px;">
+                <div class="progress-bar bg-primary" style="width:65%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center mb-2">
+              <span class="fw-semibold" style="width:130px;">Bootstrap 5</span>
+              <div class="progress flex-grow-1" style="height:8px;">
+                <div class="progress-bar bg-primary" style="width:85%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center mb-2">
+              <span class="fw-semibold" style="width:130px;">Responsive Design</span>
+              <div class="progress flex-grow-1" style="height:8px;">
+                <div class="progress-bar bg-primary" style="width:90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center mb-2">
+              <span class="fw-semibold" style="width:130px;">WordPress</span>
+              <div class="progress flex-grow-1" style="height:8px;">
+                <div class="progress-bar bg-warning" style="width:50%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-center mb-2">
+              <span class="fw-semibold" style="width:130px;">Git & GitHub</span>
+              <div class="progress flex-grow-1" style="height:8px;">
+                <div class="progress-bar bg-primary" style="width:75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="bg-white">
+  <div class="container">
+    <h2><i class="bi bi-folder2-open"></i>Recent Projects</h2>
+
+    <!-- Project 1: Dental Website -->
+    <div class="row g-4 mb-4">
+      <div class="col-md-6">
+        <div class="project-card h-100">
+          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&h=300&fit=crop" alt="Dental Clinic Website">
+          <div class="card-body">
+            <h5 class="fw-bold">SmileCare Dental Clinic</h5>
+            <p class="text-secondary small">A complete 5-page business website with hero section, services, team profiles, appointment booking form, and responsive design. Built for a local dental practice.</p>
+            <div class="d-flex gap-2 flex-wrap mb-3">
+              <span class="badge bg-light text-dark border">HTML5</span>
+              <span class="badge bg-light text-dark border">CSS3</span>
+              <span class="badge bg-light text-dark border">Bootstrap 5</span>
+              <span class="badge bg-light text-dark border">Responsive</span>
+            </div>
+            <a href="https://kickwindows998-cell.github.io/dentist-website/" target="_blank" class="btn btn-sm btn-outline-primary">
+              <i class="bi bi-box-arrow-up-right"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Coffee Landing Page -->
+      <div class="col-md-6">
+        <div class="project-card h-100">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&h=300&fit=crop" alt="Coffee Shop Landing Page">
+          <div class="card-body">
+            <h5 class="fw-bold">Brew & Bean Coffee House</h5>
+            <p class="text-secondary small">A modern landing page with menu showcase, customer testimonials, location section, and loyalty program CTA. Warm color palette designed for a neighborhood coffee shop.</p>
+            <div class="d-flex gap-2 flex-wrap mb-3">
+              <span class="badge bg-light text-dark border">HTML5</span>
+              <span class="badge bg-light text-dark border">CSS3</span>
+              <span class="badge bg-light text-dark border">Bootstrap 5</span>
+              <span class="badge bg-light text-dark border">Landing Page</span>
+            </div>
+            <a href="https://kickwindows998-cell.github.io/coffee-landing/" target="_blank" class="btn btn-sm btn-outline-primary">
+              <i class="bi bi-box-arrow-up-right"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: Blog -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="project-card h-100">
+          <div style="height:180px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display:flex; align-items:center; justify-content:center;">
+            <i class="bi bi-journal-text text-white" style="font-size: 48px;"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="fw-bold">Tech Blog Layout</h5>
+            <p class="text-secondary small">A clean, readable blog layout with featured posts, category sidebar, newsletter signup, and pagination. Optimized for reading experience on all devices.</p>
+            <div class="d-flex gap-2 flex-wrap mb-3">
+              <span class="badge bg-light text-dark border">HTML5</span>
+              <span class="badge bg-light text-dark border">CSS Grid</span>
+              <span class="badge bg-light text-dark border">Responsive</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-outline-secondary disabled">Coming Soon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2><i class="bi bi-envelope"></i>Get In Touch</h2>
+        <p class="text-secondary mb-4">
+          Looking for a website or need help with an existing one? I'd love to hear about your project.
+        </p>
+        <div class="card shadow-sm rounded-4 p-4">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="you@example.com" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Project Type</label>
+                <select class="form-select">
+                  <option>New Website</option>
+                  <option>Website Redesign</option>
+                  <option>Bug Fix / CSS Adjustment</option>
+                  <option>WordPress Help</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" placeholder="Tell me about your project..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary px-4">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Let's Build Something Together</h2>
+    <p class="mb-4" style="opacity:0.85;">Available for freelance projects. Fast delivery, clear communication, quality work.</p>
+    <a href="#contact" class="btn btn-light btn-lg fw-semibold px-5">Hire Me</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="py-4 text-center text-secondary" style="background:#0f172a;">
+  <div class="container">
+    <p class="mb-2">&copy; 2025 Leland L. Built with Bootstrap 5.</p>
+    <div>
+      <a href="#" class="text-secondary me-3"><i class="bi bi-github"></i></a>
+      <a href="#" class="text-secondary me-3"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="text-secondary"><i class="bi bi-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
